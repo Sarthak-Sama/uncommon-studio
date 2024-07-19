@@ -24,6 +24,8 @@ body {
 
 body{
     background-color: #131312;
+    overflow-y: hidden ;
+    overflow-x: hidden;
 }
 
 #center-nav{
@@ -51,7 +53,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    gap: .6vw
+    gap: .6vw;
 }
 
 #center-nav #right-part a{
@@ -190,6 +192,7 @@ body{
     position: absolute;
     left: 45%;
     bottom: 11.5%;
+    mix-blend-mode: difference;
 }
 #page1 svg{
     scale: 7;
@@ -205,6 +208,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2vw 2vw;
+    mix-blend-mode: difference;
 }
 
 #top-nav a:nth-child(1){
@@ -222,7 +226,6 @@ body{
 #top-nav svg{
     scale: .95;
     color:#ffffffde;
-    mix-blend-mode: difference;
 }
 
 #top-nav h3{

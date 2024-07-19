@@ -58,6 +58,10 @@ tl.from("#page1 h4",{
     duration:.35,
     ease: "easeOut"
 })
+
+tl.to("body",{
+  overflowY: "auto"
+})
 // ------------------ Animating Nav Bar --------------------------------
 let navMenuOpen = false;
 document.querySelector("#menu")
@@ -440,18 +444,18 @@ gsap.timeline({
     scroller: "body",
     start: "top -630%",
     end: "top -630%",
-    onEnter: () => gsap.to(".footer-btn, nav", {filter: "invert(1)", duration: .3, ease: "easeInOut"}),
-    onLeaveBack: () => gsap.to(".footer-btn, nav", {filter: "invert(0)", duration: .3, ease: "easeInOut"})
+    onEnter: () => gsap.to(".footer-btn, #center-nav", {filter: "invert(1)", duration: .3, ease: "easeInOut"}),
+    onLeaveBack: () => gsap.to(".footer-btn, #center-nav", {filter: "invert(0)", duration: .3, ease: "easeInOut"})
   }
 });
 gsap.timeline({
   scrollTrigger: {
     trigger: "#services",
     scroller: "body",
-    start: "top -915%",
-    end: "top -915%",
-    onEnter: () => gsap.to(".footer-btn, nav", {filter: "invert(0)", duration: .3, ease: "easeInOut"}),
-    onLeaveBack: () => gsap.to(".footer-btn, nav", {filter: "invert(1)", duration: .3, ease: "easeInOut"})
+    start: "top -870%",
+    end: "top -870%",
+    onEnter: () => gsap.to(".footer-btn, #center-nav", {filter: "invert(0)", duration: .3, ease: "easeInOut"}),
+    onLeaveBack: () => gsap.to(".footer-btn, #center-nav", {filter: "invert(1)", duration: .3, ease: "easeInOut"})
   }
 });
 
