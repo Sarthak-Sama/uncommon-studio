@@ -452,10 +452,10 @@ gsap.timeline({
   scrollTrigger: {
     trigger: "#services",
     scroller: "body",
-    start: "top -870%",
-    end: "top -870%",
-    onEnter: () => gsap.to(".footer-btn, #center-nav", {filter: "invert(0)", duration: .3, ease: "easeInOut"}),
-    onLeaveBack: () => gsap.to(".footer-btn, #center-nav", {filter: "invert(1)", duration: .3, ease: "easeInOut"})
+    start: "top -883%",
+    end: "top -883%",
+    onEnter: () => gsap.to("#center-nav", {filter: "invert(0)", duration: .3, ease: "easeInOut"}),
+    onLeaveBack: () => gsap.to("#center-nav", {filter: "invert(1)", duration: .3, ease: "easeInOut"})
   }
 });
 

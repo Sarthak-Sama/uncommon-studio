@@ -679,9 +679,28 @@ body{
     color: white;
     font-weight: 100;
     font-size: 3vw;
+    position: relative;
     border-bottom: 1px white solid;
     padding-bottom: .4vw;
 }
+#left-section a:hover{
+    border: none;
+}
+#left-section a::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width:0%;
+    height: 1px;
+    background-color: #fff;
+    transition: all .5s ease-out;
+}
+#left-section a:hover::before{
+    width: 100%;
+}
+
+
 #right-section h3:nth-child(1){
     margin-top: -10vw;
 }
@@ -725,7 +744,25 @@ body{
     font-weight: 100;
     font-size: 1.4vw;
     padding-bottom: 1vw;
+    position: relative;
 }
+
+#page5 footer a::before{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width:0%;
+    height: 1px;
+    background-color: #fff;
+    transition: all .3s ease-out;
+}
+
+#page5 footer a:hover::before{
+    width: 100%;
+}
+
+
 
 #page5 footer p{
     width: 22vw;
